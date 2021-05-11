@@ -20,7 +20,7 @@
 
         print 'スタッフ一覧<br><br>';
 
-        print '<form method="POST" action="staff_edit.php">';
+        print '<form method="POST" action="staff_branch.php">';
 
         while(true) {
 
@@ -36,7 +36,8 @@
 
         }
 
-        print '<input type="submit" value="修正">';
+        print '<input type="submit" name="edit" value="修正">';
+        print '<input type="submit" name="delete" value="削除">';
         print '</form>';
     } catch (Exception $e) {
         print 'ただいま障害により大変ご迷惑をお掛けしております。';

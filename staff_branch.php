@@ -7,12 +7,13 @@
     <?php
 
     if (isset($_POST['edit']) == true) {
-        print '修正が押された';
+        header('Location: staff_edit.php');
     }
 
     if (isset($_POST['delete']) == true) {
-        print '削除が押された';
+        header('Location: staff_delete.php');
     }
+    
     ?>
 </body>
 </html>
